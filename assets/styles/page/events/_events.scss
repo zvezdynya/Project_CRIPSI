@@ -1,0 +1,137 @@
+.topic__name {
+    font-family: 'Georgia Regular';
+}
+
+.events__card-body {
+    padding: 2%;
+}
+
+.events__card-text {
+    flex: 1 1 30%;
+    font-size: 1.25em;
+}
+
+.events__img {
+    width: 100%;
+    border: 0.1rem solid #ffffff;
+}
+
+.events-page__btn-dark {
+    width: 60%;
+    margin: 3% 0;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.events-page__btn-dark:hover {
+    background-color: rgba(37, 38, 43, 0.75);
+}
+
+.events__body-tittle {
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Georgia Regular';
+}
+
+.events__date {
+    font-size: 1.125em;
+}
+
+.sidenav {
+    height: 100%;
+    width: 60vw;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 45px;
+    padding-bottom: 100px;
+}
+
+.sidenav_title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 14px;
+}
+
+.sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    border: none;
+    background: none;
+    width: 73%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+    color: rgba(74, 103, 164, 1);
+}
+
+.dropdown-btn:focus {
+    outline: none;
+}
+
+.btn-dark:focus {
+    box-shadow: none!important;
+}
+
+.btn-dark:active {
+    box-shadow: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+    .sidenav {
+        position: sticky;
+    }
+
+    .events__btn-dark {
+        width: 60%;
+        margin: 3% auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .events__img {
+        width: 100%;
+    }
+
+    .events__card-text {
+        min-height: 20%;
+    }
+
+    .events__btn-dark {
+        width: 50%;
+        margin: 3% auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .sidenav {
+        padding-bottom: 20px;
+    }
+
+    .mobile_center {
+        justify-content: center;
+    }
+
+    .sidenav a,
+    .dropdown-btn {
+        width: 100%;
+        padding: 6px 8px 6px 0px;
+    }
+}

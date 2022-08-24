@@ -1,0 +1,97 @@
+.reviews {
+	background: #F3F7F9;
+	padding-bottom: 70px;
+
+	&__title {
+		margin: 45px 0 78px;
+		font-size: $tittle;
+	}
+}
+
+.reviews__title {
+	font-family: 'Georgia Regular';
+	font-weight: 700;
+	margin: 45px 0 40px;
+}
+
+.reviews__card {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	min-height: 255px;
+	margin-bottom: 30px;
+	padding-right: 1rem;
+}
+
+.reviews__card-images {
+	display: block;
+	width: 100%;
+	margin-right: 25px;
+	max-width: 90px;
+	min-height: 90px;
+	border-radius: 100%;
+	background: url(/assets/icon/review_icon.svg) 50% no-repeat;
+	background-color: #25262B;
+}
+
+.reviews__card-info {
+	width: 320px;
+}
+
+.reviews__card-status {
+	font-size: 1.2em;
+	font-weight: 400;
+	line-height: 120%;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.reviews__card-name {
+	font-size: 1.5em;
+	font-weight: 700;
+	line-height: 120%;
+	margin: 20px 0 20px;
+	color: #000;
+}
+
+.reviews__card-name-program {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 120%;
+	color: #000;
+}
+
+.reviews__card-text {
+	margin-top: 3px;
+	padding-top: 10px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 120%;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 576px) {
+
+	.reviews__title {
+		text-align: center;
+		margin: 10px;
+		font-size: 2.5em;
+	}
+
+	.reviews__card {
+		width: 85vw;
+		text-align: center;
+		justify-content: center;
+		margin: 20px;
+	}
+
+	.reviews__card-images {
+		margin: 10px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.reviews__card {
+		justify-content: center;
+		width: fit-content;
+	}
+}

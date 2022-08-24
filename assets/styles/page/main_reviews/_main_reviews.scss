@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Georgia Regular';
+    src:
+        url('/assets/fonts/georgia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia Bold';
+    src:
+        url('/assets/fonts/georgiab.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.review {
+    .carousel-item {
+        padding: 16px;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 10px;
+    }
+}
+
+.review_name-reviewer {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.review_name-program {
+    margin-top: 7px;
+    margin-bottom: 16px;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.review_text-review {
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.review_date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: right;
+    color: rgba($black, 0.5);
+}
+
+.review_status-reviewer {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+}

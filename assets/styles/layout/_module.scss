@@ -1,0 +1,336 @@
+$background: #FFFFFF;
+$light-blue: #DEE9F0;
+$navy-blue: #4A67A4;
+$white: #FFF;
+$black:#000;
+$dark: #25262B;
+$line: #00000037;
+$orange: #FD7F06;
+$light-orange: #F59627;
+
+@font-face {
+    font-family: 'Georgia Regular';
+    src:
+        url('/assets/fonts/georgia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia Bold';
+    src:
+        url('/assets/fonts/georgiab.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: $background;
+    font-family: 'Georgia Regular';
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+input:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+input:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+header {
+    background-color: $white;
+
+    .header__info {
+        .logo-text {
+            font-size: 1.1em;
+        }
+
+        .logo-text-mobile {
+            font-size: 1em;
+            color: $black;
+            font-family: 'Georgia bold';
+        }
+
+        .phone {
+            color: $navy-blue;
+            font-family: 'Georgia bold';
+
+            @media screen and (max-width:989px) {
+                font-size: 0.9em;
+            }
+
+            @media screen and (min-width:990px) and (max-width:1199px) {
+                font-size: 1.3em;
+            }
+
+            @media screen and (min-width:1200px) {
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    .header__nav {
+        @media screen and (min-width:768px) {
+            border-top: 2px solid $line;
+        }
+
+        @media screen and (min-width:768px) and (max-width:989px) {
+            font-size: 0.9em;
+        }
+
+        @media screen and (min-width:990px) and (max-width:1199px) {
+            font-size: 1.3em;
+        }
+
+        @media screen and (min-width:1200px) {
+            font-size: 1.5em;
+        }
+
+        color: $black;
+
+        .nav-link {
+            color: $black;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+
+        &.bordered-bottom {
+            border-bottom: 2px solid $line;
+        }
+
+        .active-item {
+            border-bottom: 3px solid $orange;
+        }
+    }
+}
+
+.info {
+    background-color: $light-blue;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/info_back.jpg) 0 0/cover no-repeat;
+}
+
+.news {
+    background-color: #F3F7F9;
+}
+
+.courses {
+    background-color: $white;
+}
+
+.events {
+    background-color: $white;
+}
+
+.review {
+    background-color: #F3F7F9;
+}
+
+footer {
+    background-color: $dark;
+    color: $white;
+
+    .text20 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .btn-orange {
+        @include orange_button;
+        border-color: $orange;
+        width: 80%;
+        font-size: 1.2rem;
+
+        &:hover {
+            background: $orange;
+            border-color: $orange;
+        }
+    }
+}
+
+.footer__link {
+    padding-left: 1vw;
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+        text-decoration: none;
+        color: $orange;
+    }
+}
+
+.icon-vk {
+    fill: rgb(255, 255, 255);
+    width: 46px;
+    height: 46px;
+
+    &:hover {
+        fill: $orange;
+    }
+}
+
+.toggle {
+    z-index: 1;
+    display: block;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+    }
+
+    .hidden_checkbox {
+        display: block;
+        width: 40px;
+        height: 40px;
+
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+
+        opacity: 0;
+        z-index: 12;
+
+        &:checked~.burger .burger_line:nth-child(2) {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+        }
+
+        &:checked~.burger .burger_line:nth-child(1) {
+            transform: rotate(45deg) translate(2px, 7px);
+            background: $white;
+        }
+
+        &:checked~.burger .burger_line:nth-child(3) {
+            transform: rotate(-45deg) translate(1px, -6px);
+            background: $white;
+        }
+
+        &:checked~ul {
+            transform: none;
+        }
+    }
+
+    .burger {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+
+        .burger_line {
+            height: 2px;
+            position: relative;
+
+            background-color: $black;
+            border-radius: 1px;
+
+            z-index: 12;
+
+            opacity: 1;
+            transform: rotate(0deg) scale(1, 1);
+
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                opacity 0.55s ease;
+        }
+    }
+}
+
+.menu {
+    z-index: 11;
+
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 50%;
+    height: 100vh;
+
+    padding-top: 3em;
+
+    background: $dark;
+    list-style-type: none;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    color: $white;
+
+    &__item {
+        color: $white;
+        font-family: 'Georgia Bold';
+
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 811px) {
+
+    .no-mobile {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    footer {
+        font-size: small;
+
+        .text20 {
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 810px) {
+
+    .tablet {
+        display: none;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
+    footer {
+        .text20 {
+            font-size: calc(14px + 2*(100vw / 1440));
+        }
+
+        h3 {
+            font-size: calc(20px + 10*(100vw / 1440));
+        }
+    }
+
+}

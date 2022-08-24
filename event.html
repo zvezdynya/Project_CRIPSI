@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Мероприятия</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav role="navigation" class="header__nav d-sm-block d-lg-none d-md-none">
+      <div class="toggle" id="menuToggle">
+        <input type="checkbox" class="hidden_checkbox" />
+        <div class="burger">
+          <span class="burger_line d-block w-100 mb-1"></span>
+          <span class="burger_line d-block w-100 mb-1"></span>
+          <span class="burger_line d-block w-100 mb-1"></span>
+        </div>
+        <ul class="menu d-flex flex-column align-items-center m-0 pl-0">
+          <a href="/index.html">
+            <li class="menu__item my-2">Главная</li>
+          </a>
+          <a href="/courses_page_grid_cards.html">
+            <li class="menu__item my-2">Курсы</li>
+          </a>
+          <a href="/event.html">
+            <li class="menu__item my-2">Мероприятия</li>
+          </a>
+          <a href="/about.html">
+            <li class="menu__item my-2">О нас</li>
+          </a>
+          <a href="/partners.html">
+            <li class="menu__item my-2">Сотрудничество</li>
+          </a>
+          <a href="/reviews.html">
+            <li class="menu__item my-2">Отзывы</li>
+          </a>
+          <a href="/contacts.html">
+            <li class="menu__item my-2">Контакты</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid pt-4 pb-5 pb-lg-0 pb-md-0">
+      <div class="container">
+        <div class="row header__info align-items-center">
+          <div class="col-md-4 col-lg-4 col-sm-12">
+            <p class="logo-text d-none d-lg-block d-md-block">АНО ДПО «Центр развития инновационного
+              предпринимательства и
+              социальных
+              инициатив»</p>
+            <p class="logo-text-mobile d-lg-none d-md-none d-flex justify-content-center pb-3">АНО ДПО
+              «ЦРИПСИ»
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-5 col-sm-12 input-group">
+            <input class="form-control py-2 border-right-0 border" type="search" placeholder="Поиск по сайту">
+            <span class="input-group-append">
+              <div class="input-group-text bg-transparent"><i class="fa fa-search"></i></div>
+            </span>
+          </div>
+          <div class="col-3 d-none d-lg-flex d-md-flex justify-content-end">
+            <p class="phone">+7 (989) 276-02-01</p>
+          </div>
+        </div>
+
+        <div class="row d-none d-lg-flex d-md-flex">
+          <div class="col">
+            <ul class="nav header__nav bordered-bottom justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link active pl-0 text-decoration-none" href="/index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/courses_page_grid_cards.html">Курсы</a>
+              </li>
+              <li class="nav-item active-item">
+                <a class="nav-link " href="/event.html">Мероприятия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/about.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/partners.html">Сотрудничество</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/reviews.html">Отзывы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pr-0" href="/contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </header>
+  <div class="card__block-background">
+
+    <div class="container">
+      <div class="wrapper">
+        <div class="row gy-5 mobile_center">
+          <div class="sidenav col-md-5">
+            <div class="sidenav_title">Мероприятия</div>
+            <button class="dropdown-btn">
+              Вебинары
+            </button>
+            <div class="dropdown-container">
+              <a href="#event_1">Восстановление после ковид</a>
+              <a href="#event_2">Вебинар 2</a>
+            </div>
+            <button class="dropdown-btn">
+              Мастер-классы
+            </button>
+            <div class="dropdown-container">
+              <a href="#event_3">Мастер-класс 1</a>
+              <a href="#event_4">Мастер-класс 2</a>
+            </div>
+            <button class="dropdown-btn">
+              Практикумы
+            </button>
+            <div class="dropdown-container">
+              <a href="#event_5">Практикум 1</a>
+              <a href="#event_6">Практикум 2</a>
+            </div>
+            <button class="dropdown-btn">
+              Открытые лекции
+            </button>
+            <div class="dropdown-container">
+              <a href="#event_7">Лекция 1</a>
+              <a href="#event_8">Лекция 2</a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div id="webinars">
+              <div class="row justify-content-center">
+                <div class="col-9">
+                  <h1 class="topic__name"><a name="webinars"></a>Вебинары</h1>
+                </div>
+              </div>
+              <!--card-->
+              <div class="row justify-content-between mb-5 ml-3" id="event_1">
+                <div class="card p-0 row flex-lg-row flex-column col-12 mb-2">
+                  <div class="row mr-0 ml-0">
+                    <div class="col-lg-6 col-12 pr-0 pl-0">
+                      <img class="h-100 events__img img-fluid rounded-start" src="./assets/images/COVID.webp"
+                        alt="Webinar1">
+                    </div>
+                    <div class="col-lg-6 col-12 card-body events__card-body">
+                      <div class="h-100 p-3 d-flex flex-column align-content-end">
+                        <h5 class="events__body-tittle font-weight-bold ">Вебинар доктора Никитиной Юлии</h5>
+                        <p class="events__date">26 апреля 2022</p>
+                        <p class="events__card-text">Если Вы переболели Ковид-19 и Ваc беспокоят последствия.</p>
+                        <a href="#" data-toggle="modal" data-target="#EventBuyModal"
+                          class="events__btn-dark events-page__btn-dark text-lg-center btn btn-dark">Купить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--card-->
+              <div class="row justify-content-between mb-5 ml-0 mr-1" id="event_2">
+                <div class="card p-0 flex-lg-row flex-column col-12 mb-2">
+                  <div class="row mr-0 ml-0 w-100">
+                    <div class="col-lg-6 col-12 pr-0 pl-0">
+                      <img class="h-100 events__img img-fluid rounded-start" src="./assets/images/image.png"
+                        alt="Webinar1">
+                    </div>
+                    <div class="col-lg-6 col-12 card-body events__card-body">
+                      <div class="h-100 w-100 p-3 d-flex flex-column align-content-end">
+                        <h5 class="events__body-tittle font-weight-bold ">Заголовок</h5>
+                        <p class="events__date">Дата</p>
+                        <p class="events__card-text">Описание</p>
+                        <a href="#" data-toggle="modal" data-target="#EventBuyModal"
+                          class="events__btn-dark events-page__btn-dark text-lg-center btn btn-dark">Купить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="refresher__courses">
+                <div class="row justify-content-center">
+                  <div class="col-9">
+                    <h1 class="topic__name"><a name="training"></a>Мастер-классы</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between mb-5 ml-0 mr-1" id="event_3">
+                <div class="card p-0 flex-lg-row flex-column col-12 mb-2">
+                  <div class="row mr-0 ml-0 w-100">
+                    <div class="col-lg-6 col-12 pr-0 pl-0">
+                      <img class="h-100 events__img img-fluid rounded-start" src="./assets/images/image.png"
+                        alt="Webinar1">
+                    </div>
+                    <div class="col-lg-6 col-12 card-body events__card-body">
+                      <div class="h-100 w-100 p-3 d-flex flex-column align-content-end">
+                        <h5 class="events__body-tittle font-weight-bold ">Заголовок</h5>
+                        <p class="events__date">Дата</p>
+                        <p class="events__card-text">Описание</p>
+                        <a href="#" data-toggle="modal" data-target="#EventBuyModal"
+                          class="events__btn-dark events-page__btn-dark text-lg-center btn btn-dark">Купить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between mb-5 ml-0 mr-1" id="event_4">
+                <div class="card p-0 flex-lg-row flex-column col-12 mb-2">
+                  <div class="row mr-0 ml-0 w-100">
+                    <div class="col-lg-6 col-12 pr-0 pl-0">
+                      <img class="h-100 events__img img-fluid rounded-start" src="./assets/images/image.png"
+                        alt="Webinar1">
+                    </div>
+                    <div class="col-lg-6 col-12 card-body events__card-body">
+                      <div class="h-100 w-100 p-3 d-flex flex-column align-content-end">
+                        <h5 class="events__body-tittle font-weight-bold ">Заголовок</h5>
+                        <p class="events__date">Дата</p>
+                        <p class="events__card-text">Описание</p>
+                        <a href="#" data-toggle="modal" data-target="#EventBuyModal"
+                          class="events__btn-dark events-page__btn-dark text-lg-center btn btn-dark">Купить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="refresher__courses2">
+                <div class="row justify-content-center">
+                  <div class="col-9">
+                    <h1 class="topic__name"><a name="training"></a>Практикумы</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between mb-5 ml-0 mr-1" id="event_5">
+                <div class="card p-0 flex-lg-row flex-column col-12 mb-2">
+                  <div class="row mr-0 ml-0 w-100">
+                    <div class="col-lg-6 col-12 pr-0 pl-0">
+                      <img class="h-100 events__img img-fluid rounded-start" src="./assets/images/image.png"
+                        alt="Webinar1">
+                    </div>
+                    <div class="col-lg-6 col-12 card-body events__card-body">
+                      <div class="h-100 w-100 p-3 d-flex flex-column align-content-end">
+                        <h5 class="events__body-tittle font-weight-bold ">Заголовок</h5>
+                        <p class="events__date">Дата</p>
+                        <p class="events__card-text">Описание</p>
+                        <a href="#" data-toggle="modal" data-target="#EventBuyModal"
+                          class="events__btn-dark events-page__btn-dark text-lg-center btn btn-dark">Купить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between mb-5 ml-0 mr-1" id="event_6">
+                <div class="card p-0 flex-lg-row flex-column col-12 mb-2">
+                  <div class="row mr-0 ml-0 w-100">
+                    <div class="col-lg-6 col-12 pr-0 pl-0">
+                      <img class="h-100 events__img img-fluid rounded-start" src="./assets/images/image.png"
+                        alt="Webinar1">
+                    </div>
+                    <div class="col-lg-6 col-12 card-body events__card-body">
+                      <div class="h-100 w-100 p-3 d-flex flex-column align-content-end">
+                        <h5 class="events__body-tittle font-weight-bold ">Заголовок</h5>
+                        <p class="events__date">Дата</p>
+                        <p class="events__card-text">Описание</p>
+                        <a href="#" data-toggle="modal" data-target="#EventBuyModal"
+                          class="events__btn-dark events-page__btn-dark text-lg-center btn btn-dark">Купить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="refresher__courses3">
+                <div class="row justify-content-center">
+                  <div class="col-9">
+                    <h1 class="topic__name"><a name="training"></a>Открытые лекции</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between mb-5 ml-0 mr-1" id="event_7">
+                <div class="card p-0 flex-lg-row flex-column col-12 mb-2">
+                  <div class="row mr-0 ml-0 w-100">
+                    <div class="col-lg-6 col-12 pr-0 pl-0">
+                      <img class="h-100 events__img img-fluid rounded-start" src="./assets/images/image.png"
+                        alt="Webinar1">
+                    </div>
+                    <div class="col-lg-6 col-12 card-body events__card-body">
+                      <div class="h-100 w-100 p-3 d-flex flex-column align-content-end">
+                        <h5 class="events__body-tittle font-weight-bold">Заголовок</h5>
+                        <p class="events__date">Дата</p>
+                        <p class="events__card-text">Описание</p>
+                        <a href="#" data-toggle="modal" data-target="#EventBuyModal"
+                          class="events__btn-dark events-page__btn-dark text-lg-center btn btn-dark">Купить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between mb-5 ml-0 mr-1" id="event_8">
+                <div class="card p-0 flex-lg-row flex-column col-12 mb-5">
+                  <div class="row mr-0 ml-0 w-100">
+                    <div class="col-lg-6 col-12 pr-0 pl-0">
+                      <img class="h-100 events__img img-fluid rounded-start" src="./assets/images/image.png"
+                        alt="Webinar1">
+                    </div>
+                    <div class="col-lg-6 col-12 card-body events__card-body">
+                      <div class="h-100 w-100 p-3 d-flex flex-column align-content-end">
+                        <h5 class="events__body-tittle font-weight-bold">Заголовок</h5>
+                        <p class="events__date">Дата</p>
+                        <p class="events__card-text">Описание</p>
+                        <a href="#" data-toggle="modal" data-target="#EventBuyModal"
+                          class="events__btn-dark events-page__btn-dark text-lg-center btn btn-dark">Купить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container-fluid">
+      <div class="container no-mobile">
+        <div class="row">
+          <div class="col-5">
+            <div class="my-4">АНО ДПО «Центр развития инновационного предпринимательства и
+              социальных
+              инициатив»</div>
+            <a class="footer__link my-4 px-0 text20" href="#">Политика
+              конфиденциальности</a>
+            <h3 class="my-4">Наши контакты</h3>
+            <div class="my-4 text20">
+              <a class="footer__link px-0 d-flex align-items-center" href="#"><img class="px-0"
+                  src="assets/icon/footer_phone.svg" alt="">
+                <div class="text20 px-2">+7-989-276-02-01</div>
+              </a>
+            </div>
+            <div class="my-4 text20">
+              <a class="footer__link px-0 d-flex align-items-center" href="#"><img src="assets/icon/footer_letter.svg"
+                  alt="">
+                <div class="text20 px-3">cripsi@list.ru</div>
+              </a>
+            </div>
+            <a href="https://vk.com/cripsi_centr" target="_blank" rel="noopener"
+              class="footer__link mb-5 px-0 d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3 0 32 32" version="1.1" role="img"
+                title="Vkontakte" alt="Vkontakte" class="icon-vk">
+                <g>
+                  <path
+                    d="M26.712 10.96s-.167-.48-1.21-.348l-3.447.024a.785.785 0 0 0-.455.072s-.204.108-.3.37a22.1 22.1 0 0 1-1.28 2.695c-1.533 2.61-2.156 2.754-2.407 2.587-.587-.372-.43-1.51-.43-2.323 0-2.54.382-3.592-.756-3.868-.37-.084-.646-.144-1.616-.156-1.232-.012-2.274 0-2.86.287-.396.193-.695.624-.515.648.227.036.742.143 1.017.515 0 0 .3.49.347 1.568.13 2.982-.48 3.353-.48 3.353-.466.252-1.28-.167-2.478-2.634 0 0-.694-1.222-1.233-2.563-.097-.25-.288-.383-.288-.383s-.216-.168-.527-.216l-3.28.024c-.504 0-.683.228-.683.228s-.18.19-.012.587c2.562 6.022 5.483 9.04 5.483 9.04s2.67 2.79 5.7 2.597h1.376c.418-.035.634-.263.634-.263s.192-.214.18-.61c-.024-1.843.838-2.12.838-2.12.838-.262 1.915 1.785 3.065 2.575 0 0 .874.6 1.532.467l3.064-.048c1.617-.01.85-1.352.85-1.352-.06-.108-.442-.934-2.286-2.647-1.916-1.784-1.665-1.496.658-4.585 1.413-1.88 1.976-3.03 1.796-3.52z">
+                  </path>
+                </g>
+              </svg>
+              <div class="text20">ВКонтакте</div>
+            </a>
+          </div>
+          <div class=" col-2">
+            <h3 class="my-3">О центре </h3>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="about.html">О нас</a>
+            </div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/about.html#document">Документы</a>
+            </div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/reviews.html">Отзывы</a>
+            </div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/contacts.html">Контакты</a>
+            </div>
+          </div>
+          <div class="col-2">
+            <h3 class="my-3 d-flex align-items-center">Обучение</h3>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/courses_page_grid_cards.html">Курсы</a>
+            </div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/event.html">Мероприятия</a>
+            </div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/index.html#news">Новости</a>
+            </div>
+          </div>
+          <div class="col-3">
+            <h3 class="my-3">Сотрудничество</h3>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/partners.html#program">Партнерская программа</a></div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/partners.html#partners">Наши партнеры</a></div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/partners.html#experts">Экспертам</a>
+            </div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/partners.html#cooperation">Сотрудничество</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container tablet">
+        <div class="row">
+          <div class="col">
+            <div class="my-4">АНО ДПО «Центр развития инновационного предпринимательства и
+              социальных
+              инициатив»</div>
+            <a class="footer__link my-4 px-0 text20" href="#">Политика
+              конфиденциальности</a>
+          </div>
+          <div class="col">
+            <h3 class="my-3">О центре </h3>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="about.html">О нас</a></div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/about.html#document">Документы</a></div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/reviews.html">Отзывы</a></div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/contacts.html">Контакты</a></div>
+          </div>
+          <div class="col">
+            <h3 class="my-3 d-flex align-items-center">Обучение</h3>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/courses_page_grid_cards.html">Курсы</a></div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/event.html">Мероприятия</a></div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/index.html#news">Новости</a></div>
+          </div>
+          <div class="col">
+            <h3 class="my-3">Сотрудничество</h3>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/partners.html#program">Партнерская программа</a></div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/partners.html#partners">Наши партнеры</a></div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/partners.html#experts">Экспертам</a>
+            </div>
+            <div class="my-3 d-flex align-items-center">
+              <img src="assets/icon/footer_vector.png" alt="">
+              <a class="footer__link" href="/partners.html#cooperation">Сотрудничество</a>
+            </div>
+          </div>
+          <div class="col-6">
+            <h3 class="my-1">Наши контакты</h3>
+            <div class="my-4 text20">
+              <a class="footer__link px-0 d-flex align-items-center" href="#"><img class="px-0"
+                  src="assets/icon/footer_phone.svg" alt="">
+                <div class="text20 px-2">+7-989-276-02-01</div>
+              </a>
+            </div>
+            <div class="my-4 text20">
+              <a class="footer__link px-0 d-flex align-items-center" href="#"><img src="assets/icon/footer_letter.svg"
+                  alt="">
+                <div class="text20 px-3">cripsi@list.ru</div>
+              </a>
+            </div>
+            <a href="https://vk.com/cripsi_centr" target="_blank" rel="noopener"
+              class="footer__link mb-5 px-0 d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3 0 32 32" version="1.1" role="img"
+                title="Vkontakte" alt="Vkontakte" class="icon-vk">
+                <g>
+                  <path
+                    d="M26.712 10.96s-.167-.48-1.21-.348l-3.447.024a.785.785 0 0 0-.455.072s-.204.108-.3.37a22.1 22.1 0 0 1-1.28 2.695c-1.533 2.61-2.156 2.754-2.407 2.587-.587-.372-.43-1.51-.43-2.323 0-2.54.382-3.592-.756-3.868-.37-.084-.646-.144-1.616-.156-1.232-.012-2.274 0-2.86.287-.396.193-.695.624-.515.648.227.036.742.143 1.017.515 0 0 .3.49.347 1.568.13 2.982-.48 3.353-.48 3.353-.466.252-1.28-.167-2.478-2.634 0 0-.694-1.222-1.233-2.563-.097-.25-.288-.383-.288-.383s-.216-.168-.527-.216l-3.28.024c-.504 0-.683.228-.683.228s-.18.19-.012.587c2.562 6.022 5.483 9.04 5.483 9.04s2.67 2.79 5.7 2.597h1.376c.418-.035.634-.263.634-.263s.192-.214.18-.61c-.024-1.843.838-2.12.838-2.12.838-.262 1.915 1.785 3.065 2.575 0 0 .874.6 1.532.467l3.064-.048c1.617-.01.85-1.352.85-1.352-.06-.108-.442-.934-2.286-2.647-1.916-1.784-1.665-1.496.658-4.585 1.413-1.88 1.976-3.03 1.796-3.52z">
+                  </path>
+                </g>
+              </svg>
+              <div class="text20">ВКонтакте</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mobile">
+        <div class="py-4 text20 d-flex align-items-center justify-content-center">
+          <a href="#" role="button" class="btn btn-orange d-flex align-items-center text-center">Перейти
+            вверх</a>
+        </div>
+        <h4 class="text-center">Наши контакты</h4>
+        <div class="my-4 text20">
+          <a class="footer__link px-0 d-flex align-items-center justify-content-center" href="#"><img class="px-0"
+              src="assets/icon/footer_phone.svg" alt="">
+            <div class="text20 pl-2">+7-989-276-02-01</div>
+          </a>
+        </div>
+        <div class="my-4 text20">
+          <a class="footer__link px-0 d-flex align-items-center justify-content-center" href="#"><img
+              src="assets/icon/footer_letter.svg" alt="">
+            <div class="text20 pl-3">cripsi@list.ru</div>
+          </a>
+        </div>
+        <a href="https://vk.com/cripsi_centr" target="_blank" rel="noopener"
+          class="footer__link mb-5 px-0 d-flex align-items-center justify-content-center"><svg
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3 0 32 32"
+            version="1.1" role="img" title="Vkontakte" alt="Vkontakte" class="icon-vk">
+            <g>
+              <path
+                d="M26.712 10.96s-.167-.48-1.21-.348l-3.447.024a.785.785 0 0 0-.455.072s-.204.108-.3.37a22.1 22.1 0 0 1-1.28 2.695c-1.533 2.61-2.156 2.754-2.407 2.587-.587-.372-.43-1.51-.43-2.323 0-2.54.382-3.592-.756-3.868-.37-.084-.646-.144-1.616-.156-1.232-.012-2.274 0-2.86.287-.396.193-.695.624-.515.648.227.036.742.143 1.017.515 0 0 .3.49.347 1.568.13 2.982-.48 3.353-.48 3.353-.466.252-1.28-.167-2.478-2.634 0 0-.694-1.222-1.233-2.563-.097-.25-.288-.383-.288-.383s-.216-.168-.527-.216l-3.28.024c-.504 0-.683.228-.683.228s-.18.19-.012.587c2.562 6.022 5.483 9.04 5.483 9.04s2.67 2.79 5.7 2.597h1.376c.418-.035.634-.263.634-.263s.192-.214.18-.61c-.024-1.843.838-2.12.838-2.12.838-.262 1.915 1.785 3.065 2.575 0 0 .874.6 1.532.467l3.064-.048c1.617-.01.85-1.352.85-1.352-.06-.108-.442-.934-2.286-2.647-1.916-1.784-1.665-1.496.658-4.585 1.413-1.88 1.976-3.03 1.796-3.52z">
+              </path>
+            </g>
+          </svg>
+          <div class="text20">ВКонтакте</div>
+        </a>
+
+        <div class="pb-4 text-center">АНО ДПО «Центр развития инновационного предпринимательства и
+          социальных инициатив»
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!--Modal_buy_start-->
+  <div class="modal fade" id="EventBuyModal" tabindex="-1" role="dialog" aria-labelledby="EventBuyModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="EventBuyModalTitle">Бизнес-школа «LIFT»</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Тип документа, подтверждающий прохождение и полное название программы
+          </p>
+          <p>
+            Время обучения: x ак. ч.
+          </p>
+          <p>
+            Цена:
+          </p>
+          Чтобы записаться на курс, свяжитесь с нами по адресу cripsi@list.ru.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal_buy_end-->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+
+  <script src="assets/js/dropdown_btn.js">
+  </script>
+</body>
+
+</html>

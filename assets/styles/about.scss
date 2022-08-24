@@ -1,0 +1,143 @@
+.about {
+    padding-top: 45px;
+}
+
+.about_title {
+    margin-bottom: 40px;
+}
+
+.about_block {
+    margin-bottom: 10px;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+.about_subblock {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
+
+}
+
+.about_block_end {
+    padding-bottom: 100px;
+}
+
+.title {
+    font-family: 'Georgia Regular';
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+}
+
+.title2 {
+    font-family: 'Georgia Regular';
+    font-weight: 700;
+    font-size: 2, 5rem;
+}
+
+.blue_title {
+    font-family: 'Georgia Regular';
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #4A67A4;
+}
+
+.text {
+    padding-top: 25px;
+    font-family: 'Georgia Regular';
+    font-size: 1rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.table-box {
+    max-width: 500px;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+tr,
+td,
+th {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+@media screen and (min-width: 770px) and (max-width: 992px) {
+    .table_box {
+        max-width: 500px;
+        overflow-x: scroll;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 769px) {
+    .table_box {
+        max-width: 400px;
+        overflow-x: scroll;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 576px) {
+    .table_box {
+        max-width: 350px;
+        overflow-x: scroll;
+    }
+
+    .blue_title {
+        padding-right: 2vw;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    .table_box {
+        max-width: 250px;
+        overflow-x: scroll;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+.more_button {
+    display: inline-block;
+    height: 32px;
+    border: none;
+    background-color: inherit;
+}
+
+#more,
+#more2,
+#more3,
+#more4,
+#more5,
+#more6,
+#more7,
+#more8,
+#more9,
+#more10 {
+    display: none;
+}

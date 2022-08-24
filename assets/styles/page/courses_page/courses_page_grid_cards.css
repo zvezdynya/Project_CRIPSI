@@ -1,0 +1,213 @@
+.card__block-background {
+  background-color: #F3F7F9;
+}
+
+body {
+  font-family: 'Georgia Regular';
+  font-style: normal;
+}
+
+.topic__name {
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #000;
+  line-height: 130%;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+#retraining__courses {
+  margin-bottom: 4rem;
+}
+
+.card__name {
+  font-weight: 400;
+  font-size: 1em;
+  color: #999;
+  line-height: 120%;
+}
+
+.card__description {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #000;
+  line-height: 150%;
+  padding-right: 1rem;
+}
+
+.card__links-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin-top: 2rem;
+}
+
+.card__links-container .card__link {
+  font-weight: 600;
+  font-size: 1em;
+  color: #000;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.card__links-container .card__link:hover {
+  color: #FFF;
+  background-color: #FD7F06;
+  border-radius: 0px 5px 5px 5px;
+}
+
+.card__links-container .card__button {
+  font-weight: 600;
+  font-size: 1.05em;
+  color: #FFF;
+  line-height: 3rem;
+  background-color: #25262B;
+  border-top-right-radius: 0;
+}
+
+.card__links-container .btn-dark:hover {
+  background-color: #505157;
+}
+
+.btn-dark:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.card__footer-update {
+  background-color: #FFF;
+  border: none;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: #FFF;
+  }
+}
+
+@media (max-width: 766px) {
+  .topic__name {
+    font-weight: 700;
+    font-size: 2em;
+  }
+  .card__name {
+    font-weight: 400;
+    font-size: 1em;
+    color: #25262B;
+    line-height: 120%;
+  }
+  .card__link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .card__tablet {
+    width: inherit;
+  }
+}
+
+@media print {
+  #refresher__courses img,
+  #retraining__courses img {
+    display: none;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 60vw;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 45px;
+  padding-bottom: 100px;
+}
+
+.sidenav_title {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 14px;
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.7);
+  display: block;
+  border: none;
+  background: none;
+  width: 73%;
+  text-align: left;
+  cursor: pointer;
+  outline: invert;
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover,
+.sidenav a:focus,
+.dropdown-btn:focus {
+  color: #4a67a4;
+}
+
+.dropdown-btn:focus {
+  outline: none;
+}
+
+.btn-dark:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-dark:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sidenav {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidenav {
+    padding-bottom: 20px;
+  }
+  .mobile_center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sidenav a,
+  .dropdown-btn {
+    width: 100%;
+    padding: 6px 8px 6px 0px;
+  }
+}
+
+.main {
+  margin-left: 200px;
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+.dropdown-container {
+  display: none;
+  padding-left: 50px;
+}
+
+.dropdown-btn:hover > .dropdown-menu {
+  display: block;
+}
+/*# sourceMappingURL=courses_page_grid_cards.css.map */
